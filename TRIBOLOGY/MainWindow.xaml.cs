@@ -64,11 +64,6 @@ namespace TRIBOLOGY
         //初始化函数
         void IniSystem()
         {
-            //***************************************************************************
-            //RecInfoFile.WriteLine("********************************************");
-            //RecInfoFile.Flush();
-            //***************************************************************************
-
             //创建数据文件目录
             if (!Directory.Exists("D:\\Program Files\\TRIBOLOGY"))
             {
@@ -133,7 +128,7 @@ namespace TRIBOLOGY
             //使用事件方式处理串口接收到的数据
             serPort.DataReceived += new SerialDataReceivedEventHandler(seriReceive);
 
-            //定时器，计时周期250ms
+            //定时器，计时周期250 ms
             timer.Interval = TimeSpan.FromMilliseconds(250);
             timer.Tick += new EventHandler(Timer_Tick);
 
@@ -174,8 +169,6 @@ namespace TRIBOLOGY
         //定时器事件响应（轮询查询）
         void Timer_Tick(object sender, EventArgs e)
         {
-            //SendData.testFile.WriteLine("AAAA");
-            //SendData.testFile.Flush();
 
             //查询功能标志
             flag++;
@@ -230,8 +223,6 @@ namespace TRIBOLOGY
                             RTDatas.uiDataRT.ProBarVisible = Visibility.Hidden;
                         }
                     }
-                    //SendData.testFile.WriteLine("BBBB");
-                    //SendData.testFile.Flush();
 
                     break;
 
@@ -244,8 +235,6 @@ namespace TRIBOLOGY
                     serPort.DiscardInBuffer();
                     //********************************************************************
                     sendData.qurMotoSpeed(serPort);
-                    //SendData.testFile.WriteLine("CCCC");
-                    //SendData.testFile.Flush();
                     break;
 
                 //查询电机扭矩
@@ -257,8 +246,6 @@ namespace TRIBOLOGY
                     serPort.DiscardInBuffer();
                     //********************************************************************
                     sendData.qurMotoTorque(serPort);
-                    //SendData.testFile.WriteLine("DDDD");
-                    //SendData.testFile.Flush();
                     break;
 
                 //查询温湿度及压力
@@ -270,8 +257,6 @@ namespace TRIBOLOGY
                     serPort.DiscardInBuffer();
                     //********************************************************************
                     sendData.qurHumTemPre(serPort);
-                    //SendData.testFile.WriteLine("EEEE");
-                    //SendData.testFile.Flush();
                     break;
             }
         }
@@ -279,21 +264,11 @@ namespace TRIBOLOGY
         //串口事件响应（在辅助线程中执行，无法直接跨线程更新UI界面）
         private void seriReceive(object sender, SerialDataReceivedEventArgs e)
         {
-            //********************************************************************
-            //RecInfoFile.WriteLine("Serial port respond：Begin");
-            //RecInfoFile.Flush();
-            //********************************************************************
-
             int n = serPort.BytesToRead;//获取接收缓冲区中数据的字节数
             byte[] temp = new byte[n];
 
             serPort.Read(temp, 0, n);//读取串口数据
             dataRec.AddRange(temp);//数据拼接
-
-            //********************************************************************
-            //RecInfoFile.WriteLine("Flag.nFlag：" + Flag.nFlag.ToString()+"\nNum of serialport-data bytes：" + dataRec.Count.ToString());
-            //RecInfoFile.Flush();
-            //********************************************************************
 
             if (dataRec.Count >= Flag.nFlag)//数据完整性校验
             {
@@ -303,26 +278,9 @@ namespace TRIBOLOGY
                 dataRec.Clear();
 
                 //使用新线程处理串口接收到的数据，避免阻塞串口
-                
-                //********************************************************************
-                //RecInfoFile.WriteLine("New thread：Begin");
-                //RecInfoFile.Flush();
-                //********************************************************************
-
                 Thread dataHandlerThread = new Thread(new ParameterizedThreadStart(DataHandlerThread));
                 dataHandlerThread.Start(receiveData);
-
-                //********************************************************************
-                //RecInfoFile.WriteLine("New thread：End");
-                //RecInfoFile.Flush();
-                //********************************************************************
-
             }
-            //********************************************************************
-            //RecInfoFile.WriteLine("Serial port respond：End");
-            //RecInfoFile.Flush();
-            //********************************************************************
-
         }
 
         //串口数据处理
@@ -333,26 +291,13 @@ namespace TRIBOLOGY
             byte[] receiveData = data as byte[];
             //用于将byte[]数组解析成字符串
             ASCIIEncoding asciiEncoding = new ASCIIEncoding();
-            //********************************************************************
-            //RecInfoFile.WriteLine("Enter the DataHandlerThread subroutine.");
-            //RecInfoFile.Flush();
-            //********************************************************************
-
             //更新数据
             switch (Flag.nFunc)
             {
                 case 1: //设置电机转速
-                    //********************************************************************
-                    //RecInfoFile.WriteLine("Rec:1");
-                    //RecInfoFile.Flush();
-                    //********************************************************************
                     break;
 
                 case 2: //电机转速
-                    //********************************************************************
-                    //RecInfoFile.WriteLine("Rec:2");
-                    //RecInfoFile.Flush();
-                    //********************************************************************
                     Data.MotoSpeed = receiveData[3] * 256 + receiveData[4];
                     Data.PlatSpeed = (int)(Data.MotoSpeed /3.0 * 10) / 10.0;
                     Data.FricSpeed = (int)(Data.PlatSpeed / 60 * SysParam.FricRadius * 100) / 100.0;
@@ -367,10 +312,6 @@ namespace TRIBOLOGY
                     break;
 
                 case 3: //电机扭矩
-                    //********************************************************************
-                    //RecInfoFile.WriteLine("Rec:3");
-                    //RecInfoFile.Flush();
-                    //********************************************************************
                     Data.MotoTorque = receiveData[3] * 256 + receiveData[4];
                     RTDatas.uiDataRT.MotoTorque = Data.MotoTorque.ToString();
                     //更新界面
@@ -378,16 +319,6 @@ namespace TRIBOLOGY
                     break;
 
                 case 4: //查询温湿度及压力
-                    //********************************************************************
-                    //RecInfoFile.WriteLine("Rec:4");
-                    //RecInfoFile.Flush();
-                    ////**************************************************************************************************
-
-                    ////**************************************************************************************************
-                    //RecInfoFile.WriteLine("Expect Bytes：" + Flag.nFlag.ToString());
-                    //RecInfoFile.WriteLine("Actual Byte：" + receiveData.Length.ToString());
-                    //RecInfoFile.Flush();
-
                     string s = asciiEncoding.GetString(receiveData);
                     s = s.Substring(0, s.Length - 2);
                     //判断是否出现负号
@@ -397,10 +328,6 @@ namespace TRIBOLOGY
 
                     string[] strs = s.Split('+');
                   
-                    ////**************************************************************************************************
-                    //RecInfoFile.WriteLine("string[] strs：" + s);
-                    //RecInfoFile.Flush();
-
                     try
                     {
                         Data.Pressure1 = double.Parse(strs[1]) + SysParam.ExtraPress_1;
@@ -412,13 +339,6 @@ namespace TRIBOLOGY
                     {
                         ModernDialog.ShowMessage("预计:" + Flag.nFlag.ToString() + "\n实际：" + receiveData.GetLength(0).ToString() + "\n解析：" + strs.Length.ToString() + "\n" + e.ToString(), "Message:", MessageBoxButton.OK);
                     }
-
-                    ////**************************************************************************************************
-                    //Data.Pressure1 = 3.14;
-                    //Data.Pressure2 = 2.71;
-                    //Data.Temperature = 1.234;
-                    //Data.Humidity = 10;
-                    ////**************************************************************************************************
 
                     RTDatas.uiDataRT.Pressure = Data.Pressure1.ToString();
                     RTDatas.uiDataRT.FricForce = (Data.Pressure2 * SysParam.ArmRatio).ToString();
@@ -455,13 +375,13 @@ namespace TRIBOLOGY
             result = ModernDialog.ShowMessage("关闭窗口并退出程序？", "请确认", MessageBoxButton.OKCancel);
             if (result == MessageBoxResult.OK)
             {
-                timer.Stop();//停止计时
+                timer.Stop(); //停止计时
                 if (MotoData.StartMoto == true)
                     SetParam.dataFile.Close();
                 if (serPort.IsOpen == true)
                 {
                     sendData.setMotoSpeed(0, serPort);
-                    serPort.Close();//关闭串口
+                    serPort.Close(); //关闭串口
                 }
                 if (Flag.RecData == true)
                 {
