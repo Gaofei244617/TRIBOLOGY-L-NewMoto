@@ -1,0 +1,136 @@
+﻿<UserControl x:Class="TRIBOLOGY.RTDatas"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             xmlns:gauge="clr-namespace:CircularGauge;assembly=CircularGauge"
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="900">
+    <ScrollViewer HorizontalScrollBarVisibility="Auto" >
+        <Grid Style="{StaticResource ContentRoot}" Margin="0" RenderTransformOrigin="0.573,0.623">
+
+            <!--平台转速仪表盘-->
+            <gauge:CircularGaugeControl x:Name="myGauge1"
+                                                CurrentValue="{Binding Path=PlatSpeed}"
+                                                Radius="126"
+                                                ScaleRadius="95"
+                                                ScaleLabelRadius="75"
+                                                RangeIndicatorRadius="102"
+                                                RangeIndicatorLightRadius="10"
+                                                RangeIndicatorLightOffset="72"
+                                                RangeIndicatorThickness="6"
+                                                PointerThickness ="10"
+                                                PointerLength="90" 
+                                                PointerCapRadius="25" 
+                                                DialTextOffset="40" 
+                                                DialText="平台转速"
+                                                DialTextColor="White"
+                                                MinValue="0" 
+                                                MaxValue="800" 
+                                                OptimalRangeStartValue="200"
+                                                OptimalRangeEndValue="600"
+                                                ScaleStartAngle="120" 
+                                                ScaleSweepAngle="300"
+                                                MajorDivisionsCount="8" 
+                                                MinorDivisionsCount="5"
+                                                MajorTickSize="8,3"
+                                                MinorTickSize="6,1"
+
+                                                ScaleLabelSize="40,20"
+                                                ScaleLabelFontSize="13"
+                                                ScaleLabelForeground="White"
+                                                MajorTickColor="LightGray"
+                                                MinorTickColor="LightGray"
+                                                GaugeBackgroundColor="Black"
+                                                Height="260" 
+                                                VerticalAlignment="Top" 
+                                                Margin="371,307,0,0" 
+                                                HorizontalAlignment="Left"
+                                                Width="289" FontSize="16">
+            </gauge:CircularGaugeControl>
+
+            <!--摩擦力仪表盘-->
+            <gauge:CircularGaugeControl x:Name="myGauge2"
+                                        CurrentValue="{Binding Path=FricForce}"
+                                        Radius="126"
+                                        ScaleRadius="80"
+                                        ScaleLabelRadius="95"
+                                        RangeIndicatorRadius="62"
+                                        RangeIndicatorLightRadius="10"
+                                        RangeIndicatorLightOffset="72"
+                                        RangeIndicatorThickness="8"
+                                        PointerThickness ="5"
+                                        PointerLength="78" 
+                                        PointerCapRadius="25" 
+                                        DialTextOffset="40" 
+                                        DialText="摩擦力[N]"
+                                        DialTextColor="White"
+                                        MinValue="0" 
+                                        MaxValue="5" 
+                                        OptimalRangeStartValue="2.5"
+                                        OptimalRangeEndValue="4"
+                                        ScaleStartAngle="120" 
+                                        ScaleSweepAngle="300"
+                                        MajorDivisionsCount="10" 
+                                        MinorDivisionsCount="5"
+                                        MajorTickSize="10,3"
+                                        MinorTickSize="8,1"
+
+                                        ScaleLabelSize="40,20"
+                                        ScaleLabelFontSize="12"
+                                        ScaleLabelForeground="White"
+                                        MajorTickColor="LightGray"
+                                        MinorTickColor="LightGray"
+                                        GaugeBackgroundColor="DarkSlateGray"
+                                        Height="260" 
+                                        VerticalAlignment="Top" 
+                                        Margin="371,0,0,0" 
+                                        HorizontalAlignment="Left" 
+                                        Width="289" 
+                                        FontSize="15">
+            </gauge:CircularGaugeControl>
+
+            <!--仪表盘-->
+            <Label Content="平台转速(r/min)：" HorizontalAlignment="Left" Height="45" Margin="42,28,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="161" Background="Black" Foreground="#FF00D1FF" FontSize="18" FontWeight="Bold" MouseDoubleClick="ShowPltspeedWin"/>
+            <Label Content="{Binding Path=PlatSpeed}" HorizontalAlignment="Left" Height="45" Margin="203,28,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="79" Background="Black" Foreground="#FF40DA1E" FontSize="22" MouseDoubleClick="ShowPltspeedWin" FontFamily="Segoe UI"/>
+            <Label Content="电机转速(r/min)：" HorizontalAlignment="Left" Height="45" Margin="42,83,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="161" Background="Black" Foreground="#FF00D1FF" FontSize="18" FontWeight="Bold" MouseDoubleClick="ShowMotospeedWin"/>
+            <Label x:Name="ms" Content="{Binding Path=MotoSpeed}" HorizontalAlignment="Left" Height="45" Margin="203,83,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="79" Background="Black" Foreground="#FF40DA1E" FontSize="22" MouseDoubleClick="ShowMotospeedWin" FontFamily="Segoe UI"/>
+            <Label Content="摩擦速度(mm/s)：" HorizontalAlignment="Left" Height="45" Margin="42,133,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="161" Background="Black" Foreground="#FF00D1FF" FontSize="18" FontWeight="Bold" MouseDoubleClick="ShowFricSpeedWin"/>
+            <Label Content="{Binding Path=FricSpeed}" HorizontalAlignment="Left" Height="45" Margin="203,133,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="79" Background="Black" Foreground="#FF40DA1E" FontSize="22" MouseDoubleClick="ShowFricSpeedWin" FontFamily="Segoe UI"/>
+            <Label Content="摩     擦     力 (N)：" HorizontalAlignment="Left" Height="45" Margin="42,190,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="161" Background="Black" Foreground="#FF00D1FF" FontSize="18" FontWeight="Bold" MouseDoubleClick="ShowFricWin" HorizontalContentAlignment="Stretch"/>
+            <Label Content="{Binding Path=FricForce}" HorizontalAlignment="Left" Height="45" Margin="203,190,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="79" Background="Black" Foreground="#FF40DA1E" FontSize="22" MouseDoubleClick="ShowFricWin" FontFamily="Segoe UI"/>
+            <Label Content="电  机  扭  矩 (%)：" HorizontalAlignment="Left" Height="45" Margin="42,245,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="161" Background="Black" Foreground="#FF00D1FF" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Stretch" MouseDoubleClick="ShowTorWin"/>
+            <Label x:Name="mt" Content="{Binding Path=MotoTorque}" HorizontalAlignment="Left" Height="45" Margin="203,245,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="79" Background="Black" Foreground="#FF40DA1E" FontSize="22" MouseDoubleClick="ShowTorWin" FontFamily="Segoe UI"/>
+            <Label Content="压     力 (N)：" HorizontalAlignment="Left" Height="45" Margin="42,349,0,0" VerticalAlignment="Top" Width="161" Background="Black" Foreground="#FF00D1FF" VerticalContentAlignment="Center" FontSize="18" MouseDoubleClick="ShowPressWin" Padding="5,0,0,0" FontWeight="Bold"/>
+            <Label x:Name="press" Content="{Binding Path=Pressure}" HorizontalAlignment="Left" Height="45" Margin="203,349,0,0" VerticalAlignment="Top" Width="79" Background="Black" Foreground="#FF40DA1E" VerticalContentAlignment="Center" FontSize="22" MouseDoubleClick="ShowPressWin" FontFamily="Segoe UI"/>
+            <Label Content="温     度 (℃)：" HorizontalAlignment="Left" Height="45" Margin="42,417,0,0" VerticalAlignment="Top" Width="161" Background="Black" Foreground="#FF00D1FF" VerticalContentAlignment="Center" FontSize="18" FontWeight="Bold" MouseDoubleClick="ShowTempWin"/>
+            <Label x:Name="temp" Content="{Binding Path=Temperature}" HorizontalAlignment="Left" Height="45" Margin="203,417,0,0" VerticalAlignment="Top" Width="79" Background="Black" Foreground="#FF40DA1E" VerticalContentAlignment="Center" FontSize="22" MouseDoubleClick="ShowTempWin" FontFamily="Segoe UI"/>
+            <Label Content="相对湿度(%)：" HorizontalAlignment="Left" Height="45" Margin="42,476,0,0" VerticalAlignment="Top" Width="161" Background="Black" Foreground="#FF00D1FF" VerticalContentAlignment="Center" FontSize="18" FontWeight="Bold" MouseDoubleClick="ShowHumWin"/>
+            <Label x:Name="hum" Content="{Binding Path=Humidity}" HorizontalAlignment="Left" Height="45" Margin="203,476,0,0" VerticalAlignment="Top" Width="79" Background="Black" Foreground="#FF40DA1E" VerticalContentAlignment="Center" FontSize="22" MouseDoubleClick="ShowHumWin" FontFamily="Segoe UI"/>
+
+            <!--仪表盘-->
+            <Label Content="平台转速：" HorizontalAlignment="Left" Height="30" Margin="443,585,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="89" Background="{x:Null}" Foreground="Black" FontSize="14" FontWeight="Bold" HorizontalContentAlignment="Center" MouseDoubleClick="ShowPltspeedWin"/>
+            <Label x:Name="ps" Content="{Binding Path=PlatSpeed}" HorizontalAlignment="Left" Height="30" Margin="532,585,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="60" Background="{x:Null}" Foreground="#FF0F3E05" FontSize="16" MouseDoubleClick="ShowPltspeedWin" FontFamily="Segoe UI"/>
+            <Label Content="摩擦力：" HorizontalAlignment="Left" Height="30" Margin="454,260,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="78" Background="{x:Null}" Foreground="Black" FontSize="14" FontWeight="Bold" HorizontalContentAlignment="Center" MouseDoubleClick="ShowFricWin"/>
+            <Label x:Name="ff" Content="{Binding Path=FricForce}" HorizontalAlignment="Left" Height="30" Margin="532,260,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="60" Background="{x:Null}" Foreground="#FF0F3E05" FontSize="16" MouseDoubleClick="ShowFricWin" FontFamily="Segoe UI" />
+
+            <!--按钮-->
+            <Button x:Name="stopRecBtn" Content="停止记录" Margin="766,170,0,0" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Width="96" Click="Button_Click_1" BorderBrush="#FFCCCCCC" FontSize="14" />
+            <Button x:Name="recDataBtn" Content="记录数据" HorizontalAlignment="Left" Height="30" Margin="766,113,0,0" VerticalAlignment="Top" Width="96"  Click="Button_Click" Padding="5,1" BorderBrush="#FFCCCCCC" FontSize="14"/>
+            <Button x:Name="stopMotoBtn" Content="电机停转" HorizontalAlignment="Left" Height="30" Margin="766,43,0,0" VerticalAlignment="Top" Width="96" Click="stopMotoBtn_Click" BorderThickness="1" BorderBrush="Black" Foreground="#FFE80202"  Padding="5,1" HorizontalContentAlignment="Center" FontSize="14"/>
+            <!--<mui:ModernButton EllipseDiameter="35" IconWidth="12" IconHeight="25" Margin="728,38,0,0"  Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" Width="38" Click="Button_Click_1"
+                              IconData="F1 M 26.9166,22.1667L 37.9999,33.25L 49.0832,22.1668L 53.8332,26.9168L 42.7499,38L 53.8332,49.0834L 49.0833,53.8334L 37.9999,42.75L 26.9166,53.8334L 22.1666,49.0833L 33.25,38L 22.1667,26.9167L 26.9166,22.1667 Z " FontSize="14" FontWeight="Bold" />-->
+
+            <GridSplitter HorizontalAlignment="Left" Height="620" Margin="320,10,0,0" VerticalAlignment="Top" Width="2" />
+            <GridSplitter HorizontalAlignment="Left" Height="2" Margin="42,331,0,0" VerticalAlignment="Top" Width="240"/>
+
+            <!--进度条-->
+            <ProgressBar x:Name="proBar1" Visibility="{Binding Path=ProBarVisible}" Minimum="0" Maximum="1" Height="16" IsIndeterminate="True" Margin="42,599,0,0" HorizontalAlignment="Left" Width="214" VerticalAlignment="Top" />
+            <ProgressBar x:Name="proBar2" Visibility="{Binding Path=ProBarVisible}" Minimum="0" Maximum="1" Value="{Binding Path=ProBar}" Height="16" IsIndeterminate="False" Margin="42,615,0,0" HorizontalAlignment="Left" Width="214" VerticalAlignment="Top" />
+            <Label Content="{Binding Path=ProBarTex}" Visibility="{Binding Path=ProBarVisible}" HorizontalAlignment="Left" Height="16" Margin="256,615,0,0" VerticalAlignment="Top" Width="59" FontFamily="Segoe UI"/>
+            <Label Content="{Binding Path=LeftTime}" Visibility="{Binding Path=ProBarVisible}" HorizontalAlignment="Left" Height="16" Margin="42,631,0,0" VerticalAlignment="Top" Width="214" FontFamily="Segoe UI"/>
+
+        </Grid>
+    </ScrollViewer>
+</UserControl>

@@ -1,0 +1,363 @@
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\bin\Debug\TRIBOLOGY.exe
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\bin\Debug\TRIBOLOGY.pdb
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\bin\Debug\FirstFloor.ModernUI.dll
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\bin\Debug\FirstFloor.ModernUI.xml
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\MainWindow.baml
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\Appearance.baml
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\App.baml
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\MainWindow.g.cs
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\Appearance.g.cs
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\App.g.cs
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\TRIBOLOGY_MarkupCompile.cache
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\TRIBOLOGY.g.resources
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\TRIBOLOGY.exe
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\TRIBOLOGY.pdb
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\bin\Debug\CircularGauge.dll
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\bin\Debug\DynamicDataDisplay.dll
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Home\SetParam.baml
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Home\RTDatas.baml
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\SettingsPage.baml
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Home\SetParam.g.cs
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Home\RTDatas.g.cs
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\SettingsPage.g.cs
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Home\TempHumCur.baml
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Home\TempHumCur.g.cs
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Home\MechCur.baml
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Home\MechCur.g.cs
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\ExtraPress.baml
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\SetLeverRatio.baml
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\ExtraPress.g.cs
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\SetLeverRatio.g.cs
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\TRIBOLOGY_Content.g.cs
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\TRIBOLOGY.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Tools\Plot.baml
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Tools\ViewParams.baml
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Tools\Plot.g.cs
+C:\Users\Administrator\Desktop\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Tools\ViewParams.g.cs
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\bin\Debug\TRIBOLOGY.exe
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\bin\Debug\TRIBOLOGY.pdb
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\bin\Debug\CircularGauge.dll
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\bin\Debug\DynamicDataDisplay.dll
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\bin\Debug\FirstFloor.ModernUI.dll
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\bin\Debug\FirstFloor.ModernUI.xml
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\MainWindow.baml
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Tools\Plot.baml
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\Appearance.baml
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\ExtraPress.baml
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\SetLeverRatio.baml
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\SettingsPage.baml
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Tools\ViewParams.baml
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\App.baml
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\MainWindow.g.cs
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Tools\Plot.g.cs
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\Appearance.g.cs
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\ExtraPress.g.cs
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\SetLeverRatio.g.cs
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\SettingsPage.g.cs
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Tools\ViewParams.g.cs
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\App.g.cs
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\TRIBOLOGY_MarkupCompile.cache
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\TRIBOLOGY.g.resources
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\TRIBOLOGY.exe
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\TRIBOLOGY.pdb
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\Resources\ModernUI.Snowflakes.baml
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\SetParam.baml
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\SetParam.g.cs
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\DataCurver\MechCur.baml
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\DataCurver\TempHumCur.baml
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\RealTimeData\RTDatas.baml
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\DataCurver\MechCur.g.cs
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\DataCurver\TempHumCur.g.cs
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\RealTimeData\RTDatas.g.cs
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\EditWindow.baml
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\EditWindow.g.cs
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\TRIBOLOGY.csprojResolveAssemblyReference.cache
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\PlotWin.baml
+D:\北林\Modern UI\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\PlotWin.g.cs
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\EditWindow.baml
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\MainWindow.baml
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\DataCurver\MechCur.baml
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\PlotWin.baml
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\SystemSet.baml
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Tools\Plot.baml
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\SetParam.baml
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\DataCurver\TempHumCur.baml
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\Appearance.baml
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\RealTimeData\RTDatas.baml
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\SettingsPage.baml
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Tools\ViewParams.baml
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Resources\ModernUI.Snowflakes.baml
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\App.baml
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\EditWindow.g.cs
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\MainWindow.g.cs
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\DataCurver\MechCur.g.cs
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\PlotWin.g.cs
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\SystemSet.g.cs
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Tools\Plot.g.cs
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\SetParam.g.cs
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\DataCurver\TempHumCur.g.cs
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\Appearance.g.cs
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\RealTimeData\RTDatas.g.cs
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\SettingsPage.g.cs
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Tools\ViewParams.g.cs
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\App.g.cs
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\TRIBOLOGY_Content.g.cs
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\TRIBOLOGY_MarkupCompile.cache
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\TRIBOLOGY.g.resources
+D:\TRIBOLOGY\TRIBOLOGY\bin\Debug\TRIBOLOGY.exe.config
+D:\TRIBOLOGY\TRIBOLOGY\bin\Debug\TRIBOLOGY.exe
+D:\TRIBOLOGY\TRIBOLOGY\bin\Debug\TRIBOLOGY.pdb
+D:\TRIBOLOGY\TRIBOLOGY\bin\Debug\CircularGauge.dll
+D:\TRIBOLOGY\TRIBOLOGY\bin\Debug\DynamicDataDisplay.dll
+D:\TRIBOLOGY\TRIBOLOGY\bin\Debug\FirstFloor.ModernUI.dll
+D:\TRIBOLOGY\TRIBOLOGY\bin\Debug\FirstFloor.ModernUI.xml
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\TRIBOLOGY.csprojResolveAssemblyReference.cache
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\TRIBOLOGY.exe
+D:\TRIBOLOGY\TRIBOLOGY\obj\Debug\TRIBOLOGY.pdb
+E:\TRIBOLOGY\TRIBOLOGY\bin\Debug\TRIBOLOGY.exe.config
+E:\TRIBOLOGY\TRIBOLOGY\bin\Debug\TRIBOLOGY.exe
+E:\TRIBOLOGY\TRIBOLOGY\bin\Debug\TRIBOLOGY.pdb
+E:\TRIBOLOGY\TRIBOLOGY\bin\Debug\CircularGauge.dll
+E:\TRIBOLOGY\TRIBOLOGY\bin\Debug\DynamicDataDisplay.dll
+E:\TRIBOLOGY\TRIBOLOGY\bin\Debug\FirstFloor.ModernUI.dll
+E:\TRIBOLOGY\TRIBOLOGY\bin\Debug\FirstFloor.ModernUI.xml
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\EditWindow.baml
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\MainWindow.baml
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\DataCurver\MechCur.baml
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\PlotWin.baml
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\SystemSet.baml
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Tools\Plot.baml
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\SetParam.baml
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\DataCurver\TempHumCur.baml
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\Appearance.baml
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\RealTimeData\RTDatas.baml
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\SettingsPage.baml
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Tools\ViewParams.baml
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Resources\ModernUI.Snowflakes.baml
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\App.baml
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\EditWindow.g.cs
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\MainWindow.g.cs
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\DataCurver\MechCur.g.cs
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\PlotWin.g.cs
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\SystemSet.g.cs
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Tools\Plot.g.cs
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\SetParam.g.cs
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\DataCurver\TempHumCur.g.cs
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\Appearance.g.cs
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\RealTimeData\RTDatas.g.cs
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Settings\SettingsPage.g.cs
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\Pages\Tools\ViewParams.g.cs
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\App.g.cs
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\TRIBOLOGY_Content.g.cs
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\TRIBOLOGY_MarkupCompile.cache
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\TRIBOLOGY.g.resources
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\TRIBOLOGY.exe
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\TRIBOLOGY.pdb
+E:\TRIBOLOGY\TRIBOLOGY\obj\Debug\TRIBOLOGY.csprojResolveAssemblyReference.cache
+E:\BaiduYunDownload\TRIBOLOGY-25\TRIBOLOGY\bin\Debug\TRIBOLOGY.exe.config
+E:\BaiduYunDownload\TRIBOLOGY-25\TRIBOLOGY\obj\Debug\TRIBOLOGY.exe
+E:\BaiduYunDownload\TRIBOLOGY-25\TRIBOLOGY\obj\Debug\TRIBOLOGY.pdb
+E:\TRIBOLOGY-W\TRIBOLOGY\bin\Debug\TRIBOLOGY.exe.config
+E:\TRIBOLOGY-W\TRIBOLOGY\obj\Debug\TRIBOLOGY.exe
+E:\TRIBOLOGY-W\TRIBOLOGY\obj\Debug\TRIBOLOGY.pdb
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\bin\Debug\TRIBOLOGY.exe.config
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\TRIBOLOGY.exe
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\TRIBOLOGY.pdb
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\bin\Debug\TRIBOLOGY.exe
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\bin\Debug\TRIBOLOGY.pdb
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\bin\Debug\CircularGauge.dll
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\bin\Debug\DynamicDataDisplay.dll
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\bin\Debug\FirstFloor.ModernUI.dll
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\bin\Debug\FirstFloor.ModernUI.xml
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\TRIBOLOGY.csprojResolveAssemblyReference.cache
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\EditWindow.baml
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\MainWindow.baml
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\Pages\DataCurver\MechCur.baml
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\Pages\PlotWin.baml
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\Pages\Settings\SystemSet.baml
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\Pages\Tools\Plot.baml
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\Pages\Settings\SetParam.baml
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\Pages\DataCurver\TempHumCur.baml
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\Pages\Settings\Appearance.baml
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\Pages\RealTimeData\RTDatas.baml
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\Pages\Settings\SettingsPage.baml
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\Pages\Tools\ViewParams.baml
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\Resources\ModernUI.Snowflakes.baml
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\App.baml
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\EditWindow.g.cs
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\MainWindow.g.cs
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\Pages\DataCurver\MechCur.g.cs
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\Pages\PlotWin.g.cs
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\Pages\Settings\SystemSet.g.cs
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\Pages\Tools\Plot.g.cs
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\Pages\Settings\SetParam.g.cs
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\Pages\DataCurver\TempHumCur.g.cs
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\Pages\Settings\Appearance.g.cs
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\Pages\RealTimeData\RTDatas.g.cs
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\Pages\Settings\SettingsPage.g.cs
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\Pages\Tools\ViewParams.g.cs
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\App.g.cs
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\TRIBOLOGY_Content.g.cs
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\TRIBOLOGY_MarkupCompile.cache
+E:\GaoFei\TRIBOLOGY-L\TRIBOLOGY\obj\Debug\TRIBOLOGY.g.resources
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\bin\Debug\TRIBOLOGY.exe.config
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\TRIBOLOGY.exe
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\TRIBOLOGY.pdb
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\bin\Debug\TRIBOLOGY.exe
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\bin\Debug\TRIBOLOGY.pdb
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\bin\Debug\CircularGauge.dll
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\bin\Debug\DynamicDataDisplay.dll
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\bin\Debug\FirstFloor.ModernUI.dll
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\bin\Debug\FirstFloor.ModernUI.xml
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\TRIBOLOGY.csprojResolveAssemblyReference.cache
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\EditWindow.baml
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\MainWindow.baml
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\Pages\DataCurver\MechCur.baml
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\Pages\PlotWin.baml
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\Pages\Settings\SystemSet.baml
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\Pages\Tools\Plot.baml
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\Pages\Settings\SetParam.baml
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\Pages\DataCurver\TempHumCur.baml
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\Pages\Settings\Appearance.baml
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\Pages\RealTimeData\RTDatas.baml
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\Pages\Settings\SettingsPage.baml
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\Pages\Tools\ViewParams.baml
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\Resources\ModernUI.Snowflakes.baml
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\App.baml
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\EditWindow.g.cs
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\MainWindow.g.cs
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\Pages\DataCurver\MechCur.g.cs
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\Pages\PlotWin.g.cs
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\Pages\Settings\SystemSet.g.cs
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\Pages\Tools\Plot.g.cs
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\Pages\Settings\SetParam.g.cs
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\Pages\DataCurver\TempHumCur.g.cs
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\Pages\Settings\Appearance.g.cs
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\Pages\RealTimeData\RTDatas.g.cs
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\Pages\Settings\SettingsPage.g.cs
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\Pages\Tools\ViewParams.g.cs
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\App.g.cs
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\TRIBOLOGY_Content.g.cs
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\TRIBOLOGY_MarkupCompile.cache
+C:\Users\gaofei\Desktop\TRIBOLOGY-L-20160717\TRIBOLOGY\obj\Debug\TRIBOLOGY.g.resources
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\bin\Debug\TRIBOLOGY.exe.config
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\bin\Debug\TRIBOLOGY.exe
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\bin\Debug\TRIBOLOGY.pdb
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\bin\Debug\CircularGauge.dll
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\bin\Debug\DynamicDataDisplay.dll
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\bin\Debug\FirstFloor.ModernUI.dll
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\bin\Debug\FirstFloor.ModernUI.xml
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\TRIBOLOGY.csprojResolveAssemblyReference.cache
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\EditWindow.baml
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\MainWindow.baml
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\DataCurver\MechCur.baml
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\PlotWin.baml
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Settings\SystemSet.baml
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Tools\Plot.baml
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Settings\SetParam.baml
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\DataCurver\TempHumCur.baml
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Settings\Appearance.baml
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\RealTimeData\RTDatas.baml
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Settings\SettingsPage.baml
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Tools\ViewParams.baml
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Resources\ModernUI.Snowflakes.baml
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\App.baml
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\EditWindow.g.cs
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\MainWindow.g.cs
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\DataCurver\MechCur.g.cs
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\PlotWin.g.cs
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Settings\SystemSet.g.cs
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Tools\Plot.g.cs
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Settings\SetParam.g.cs
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\DataCurver\TempHumCur.g.cs
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Settings\Appearance.g.cs
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\RealTimeData\RTDatas.g.cs
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Settings\SettingsPage.g.cs
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Tools\ViewParams.g.cs
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\App.g.cs
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\TRIBOLOGY_Content.g.cs
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\TRIBOLOGY_MarkupCompile.cache
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\TRIBOLOGY.g.resources
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\TRIBOLOGY.exe
+D:\本科\TRIBOLOGY\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\TRIBOLOGY.pdb
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\bin\Debug\TRIBOLOGY.exe.config
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\bin\Debug\TRIBOLOGY.exe
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\bin\Debug\TRIBOLOGY.pdb
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\bin\Debug\CircularGauge.dll
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\bin\Debug\DynamicDataDisplay.dll
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\bin\Debug\FirstFloor.ModernUI.dll
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\bin\Debug\FirstFloor.ModernUI.xml
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\TRIBOLOGY.csprojResolveAssemblyReference.cache
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\EditWindow.baml
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\MainWindow.baml
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\DataCurver\MechCur.baml
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\PlotWin.baml
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Settings\SystemSet.baml
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Tools\Plot.baml
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Settings\SetParam.baml
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\DataCurver\TempHumCur.baml
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Settings\Appearance.baml
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\RealTimeData\RTDatas.baml
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Settings\SettingsPage.baml
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Tools\ViewParams.baml
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Resources\ModernUI.Snowflakes.baml
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\App.baml
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\EditWindow.g.cs
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\MainWindow.g.cs
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\DataCurver\MechCur.g.cs
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\PlotWin.g.cs
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Settings\SystemSet.g.cs
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Tools\Plot.g.cs
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Settings\SetParam.g.cs
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\DataCurver\TempHumCur.g.cs
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Settings\Appearance.g.cs
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\RealTimeData\RTDatas.g.cs
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Settings\SettingsPage.g.cs
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Tools\ViewParams.g.cs
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\App.g.cs
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\TRIBOLOGY_Content.g.cs
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\TRIBOLOGY_MarkupCompile.cache
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\TRIBOLOGY.g.resources
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\TRIBOLOGY.exe
+D:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\TRIBOLOGY.pdb
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\EditWindow.baml
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\MainWindow.baml
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\DataCurver\MechCur.baml
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\PlotWin.baml
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Settings\SystemSet.baml
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Tools\Plot.baml
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Settings\SetParam.baml
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\DataCurver\TempHumCur.baml
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Settings\Appearance.baml
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\RealTimeData\RTDatas.baml
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Settings\SettingsPage.baml
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Tools\ViewParams.baml
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Resources\ModernUI.Snowflakes.baml
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\App.baml
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\EditWindow.g.cs
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\MainWindow.g.cs
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\DataCurver\MechCur.g.cs
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\PlotWin.g.cs
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Settings\SystemSet.g.cs
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Tools\Plot.g.cs
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Settings\SetParam.g.cs
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\DataCurver\TempHumCur.g.cs
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Settings\Appearance.g.cs
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\RealTimeData\RTDatas.g.cs
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Settings\SettingsPage.g.cs
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\Pages\Tools\ViewParams.g.cs
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\App.g.cs
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\TRIBOLOGY_Content.g.cs
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\TRIBOLOGY_MarkupCompile.cache
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\TRIBOLOGY.g.resources
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\TRIBOLOGY.csproj.CoreCompileInputs.cache
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\bin\Debug\TRIBOLOGY.exe.config
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\bin\Debug\TRIBOLOGY.exe
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\bin\Debug\TRIBOLOGY.pdb
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\bin\Debug\CircularGauge.dll
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\bin\Debug\DynamicDataDisplay.dll
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\bin\Debug\FirstFloor.ModernUI.dll
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\bin\Debug\FirstFloor.ModernUI.xml
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\TRIBOLOGY.exe
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\TRIBOLOGY.pdb
+G:\TRIBOLOGY-L-NewMoto\TRIBOLOGY\obj\Debug\TRIBOLOGY.csprojResolveAssemblyReference.cache

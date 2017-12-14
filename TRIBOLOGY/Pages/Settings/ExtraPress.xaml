@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="TRIBOLOGY.ExtraPress"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="500">
+
+    <ScrollViewer HorizontalScrollBarVisibility="Auto" >
+        <Grid Style="{StaticResource ContentRoot}" Margin="0">
+            <Label Content="压力传感器1：" HorizontalAlignment="Left" Height="30" Margin="10,64,0,0" VerticalAlignment="Top" Width="94" VerticalContentAlignment="Center" FontWeight="Bold"/>
+            <TextBox x:Name="TextBox_1" HorizontalAlignment="Left" Height="30" Margin="104,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" VerticalContentAlignment="Center"/>
+            <Label Content="压力传感器2：" HorizontalAlignment="Left" Height="29" Margin="10,105,0,0" VerticalAlignment="Top" Width="94" VerticalContentAlignment="Center" FontWeight="Bold"/>
+            <TextBox x:Name="TextBox_2" HorizontalAlignment="Left" Height="29" Margin="104,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" VerticalContentAlignment="Center"/>
+            <mui:ModernButton Content="取消" EllipseDiameter="30" IconWidth="12" IconHeight="22" Margin="37,139,0,0" Height="40" VerticalAlignment="Top" HorizontalAlignment="Left" Width="67" Click="Cancel_Click"
+                              IconData="F1 M 26.9166,22.1667L 37.9999,33.25L 49.0832,22.1668L 53.8332,26.9168L 42.7499,38L 53.8332,49.0834L 49.0833,53.8334L 37.9999,42.75L 26.9166,53.8334L 22.1666,49.0833L 33.25,38L 22.1667,26.9167L 26.9166,22.1667 Z " FontSize="14" FontWeight="Bold" />
+            <mui:ModernButton Content="确定" EllipseDiameter="30" IconWidth="18" IconHeight="22" Margin="132,141,0,0" RenderTransformOrigin="1.049,0.447" Height="37" VerticalAlignment="Top" HorizontalAlignment="Left" Width="70"
+                              IconData="F1 M 23.7501,33.25L 34.8334,44.3333L 52.2499,22.1668L 56.9999,26.9168L 34.8334,53.8333L 19.0001,38L 23.7501,33.25 Z " Click="OK_Click" FontSize="14" FontWeight="Bold"/>
+
+            <!--<Button Content="确定" HorizontalAlignment="Left" Height="31" Margin="104,156,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+            <Button Content="取消" HorizontalAlignment="Left" Height="31" Margin="10,156,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>-->
+            <Label Content="请输入压力传感器零点附加值：" HorizontalAlignment="Left" Height="36" Margin="10,10,0,0" VerticalAlignment="Top" Width="272" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="16" Grid.ColumnSpan="2"/>
+            <Label Content="N" HorizontalAlignment="Left" Height="30" Margin="164,64,0,0" VerticalAlignment="Top" Width="29" FontWeight="Bold" VerticalContentAlignment="Center" FontSize="14"/>
+            <Label Content="N" HorizontalAlignment="Left" Height="30" Margin="164,104,0,0" VerticalAlignment="Top" Width="29" FontWeight="Bold" VerticalContentAlignment="Center" FontSize="14"/>
+
+        </Grid>
+    </ScrollViewer>
+</UserControl>

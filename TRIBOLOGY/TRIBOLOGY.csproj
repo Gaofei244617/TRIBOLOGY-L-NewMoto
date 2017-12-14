@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2F2FA150-48FF-4AE9-BF89-05A04ED13ABC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TRIBOLOGY</RootNamespace>
+    <AssemblyName>TRIBOLOGY</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>main.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularGauge, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\CircularGauge.dll</HintPath>
+    </Reference>
+    <Reference Include="DynamicDataDisplay">
+      <HintPath>..\packages\DynamicDataDisplay.dll</HintPath>
+    </Reference>
+    <Reference Include="FirstFloor.ModernUI, Version=1.0.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ModernUI.WPF.1.0.6\lib\net45\FirstFloor.ModernUI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Delegates.cs" />
+    <Compile Include="EditWindow.xaml.cs">
+      <DependentUpon>EditWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalVars\Flag.cs" />
+    <Compile Include="GlobalVars\MotoData.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DataCurver\MechCur.xaml.cs">
+      <DependentUpon>MechCur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PlotWin.xaml.cs">
+      <DependentUpon>PlotWin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RealTimeData\UIDataRT.cs" />
+    <Compile Include="Pages\Settings\SystemSet.xaml.cs">
+      <DependentUpon>SystemSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Tools\Plot.xaml.cs">
+      <DependentUpon>Plot.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Settings\SetParam.xaml.cs">
+      <DependentUpon>SetParam.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DataCurver\TempHumCur.xaml.cs">
+      <DependentUpon>TempHumCur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Tools\UIDataPlot.cs" />
+    <Compile Include="Pages\Tools\ViewParams.xaml.cs">
+      <DependentUpon>ViewParams.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PlotEventArgs.cs" />
+    <Compile Include="PlotPoint.cs" />
+    <Compile Include="PlotPointCollection.cs" />
+    <Compile Include="PlotterData.cs" />
+    <Compile Include="SendData.cs" />
+    <Compile Include="GlobalVars\SysParam.cs" />
+    <Compile Include="UIData.cs" />
+    <Compile Include="CRC.cs" />
+    <Compile Include="GlobalVars\Data.cs" />
+    <Compile Include="FileDataItem.cs" />
+    <Compile Include="FileOperator.cs" />
+    <Page Include="EditWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\DataCurver\MechCur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PlotWin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Settings\SystemSet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Tools\Plot.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Settings\SetParam.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="Pages\Settings\MotoDataItem.cs" />
+    <Page Include="Pages\DataCurver\TempHumCur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Settings\Appearance.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="Pages\Settings\Appearance.xaml.cs">
+      <DependentUpon>Appearance.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Settings\AppearanceViewModel.cs" />
+    <Page Include="Pages\RealTimeData\RTDatas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Settings\SettingsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="Pages\RealTimeData\RTDatas.xaml.cs">
+      <DependentUpon>RTDatas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Settings\SettingsPage.xaml.cs">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Page Include="Pages\Tools\ViewParams.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\ModernUI.Snowflakes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Lever.png" />
+    <Resource Include="Resources\main.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\background.snowflakes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\T.png" />
+    <Resource Include="Resources\X.png" />
+    <Resource Include="Resources\Y.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\lightoff.png" />
+    <Resource Include="Resources\lighton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="main.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
