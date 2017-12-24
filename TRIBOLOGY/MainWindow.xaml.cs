@@ -61,6 +61,7 @@ namespace TRIBOLOGY
         }
 
         #region 自定义函数
+        
         //初始化函数
         void IniSystem()
         {
@@ -261,7 +262,7 @@ namespace TRIBOLOGY
             }
         }
 
-        //串口事件响应（在辅助线程中执行，无法直接跨线程更新UI界面）
+        //串口事件响应（在辅助线程中执行，因为无法直接跨线程更新UI界面）
         private void seriReceive(object sender, SerialDataReceivedEventArgs e)
         {
             int n = serPort.BytesToRead;//获取接收缓冲区中数据的字节数

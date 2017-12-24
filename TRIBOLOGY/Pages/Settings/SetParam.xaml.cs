@@ -151,28 +151,14 @@ namespace TRIBOLOGY
         //打开串口按钮
         private void btnOpenPort_Click(object sender, RoutedEventArgs e)
         {
-            //ModernDialog.ShowMessage("Error Code:1", "", MessageBoxButton.OK);
-            //*********************************************************************
-            //StreamWriter spTestFile = new StreamWriter("D:\\SpTestInfo.txt");
-            //spTestFile.WriteLine("Error Code:1");
-            //spTestFile.Flush();
-            //*********************************************************************
 
             if (btnOpenPort.Content.ToString().Equals("打开串口"))
             {
-                //*********************************************************************
-                //spTestFile.WriteLine("Error Code:2");
-                //spTestFile.Flush();
-
                 MainWindow.serPort.PortName = SPortNoCombox.Text;//设置串口号
                 MainWindow.serPort.BaudRate = int.Parse(SPortBRCombox.Text);//设置波特率
 
                 SysParam.PortName = SPortNoCombox.SelectedIndex + 1;
                 SysParam.BaudRate = MainWindow.serPort.BaudRate;
-
-                //*********************************************************************
-                //spTestFile.WriteLine("Error Code:3");
-                //spTestFile.Flush();
 
                 switch (SPortParityCombox.SelectedIndex)//设置校验位
                 {
@@ -193,10 +179,6 @@ namespace TRIBOLOGY
                         break;
                 }
 
-                //*********************************************************************
-                //spTestFile.WriteLine("Error Code:4");
-                //spTestFile.Flush();
-
                 SysParam.Parity = MainWindow.serPort.Parity.ToString();
 
                 switch (SPortStopbitCombox.SelectedIndex)//设置停止位
@@ -216,26 +198,10 @@ namespace TRIBOLOGY
                 }
                 SysParam.StopBit = MainWindow.serPort.StopBits.ToString();
 
-                //*********************************************************************
-                //spTestFile.WriteLine("Error Code:5");
-                //spTestFile.Flush();
-
                 //打开串口
                 try
                 {
-                    //*********************************************************************
-                    //spTestFile.WriteLine("Error Code:6");
-                    //spTestFile.Flush();
-
                     MainWindow.serPort.Open();
-
-                    ////*****************************************************************
-                    //string[] strs = SerialPort.GetPortNames();
-                    //ModernDialog.ShowMessage("共有" + strs.GetLength(0).ToString()+"个串口", "Message:", MessageBoxButton.OK);
-                    //ModernDialog.ShowMessage("第1个串口是"+strs[0], "Message:", MessageBoxButton.OK);
-                    //ModernDialog.ShowMessage("打开的串口是：" + MainWindow.serPort.PortName, "Message:", MessageBoxButton.OK);
-                    //ModernDialog.ShowMessage("Test:"+strs.Contains(MainWindow.serPort.PortName).ToString(), "Message:", MessageBoxButton.OK);
-                    ////*****************************************************************
 
                     btnOpenPort.Content = "关闭串口";
                     light.Fill = new SolidColorBrush(Color.FromRgb(18, 239, 46));
@@ -246,60 +212,27 @@ namespace TRIBOLOGY
 
                     ModernDialog.ShowMessage(MainWindow.serPort.PortName + " 已打开！", "", MessageBoxButton.OK);
 
-                    //*********************************************************************
-                    //spTestFile.WriteLine("Error Code:7");
-                    //spTestFile.Flush();
-
                     MainWindow.timer.Start();
-
-                    //*********************************************************************
-                    //spTestFile.WriteLine("Error Code:8");
-                    //spTestFile.Flush();
 
                     //发布系统参数更改事件
                     if (OnSysParaUpdate != null)
                     {
-                        //*********************************************************************
-                        //spTestFile.WriteLine("Error Code:9");
-                        //spTestFile.Flush();
-                        
                         OnSysParaUpdate(this, new EventArgs());
-
                     }
-
-                    //*********************************************************************
-                    //spTestFile.WriteLine("Error Code:10");
-                    //spTestFile.Flush();
 
                 }
                 catch (Exception ex)
                 {
-                    //*********************************************************************
-                    //spTestFile.WriteLine("Error Code:11");
-                    //spTestFile.Flush();
-
                     ModernDialog.ShowMessage(ex.ToString(), "Message:", MessageBoxButton.OK);
                     return;
                 }
-
-                //*********************************************************************
-                //spTestFile.WriteLine("Error Code:12");
-                //spTestFile.Flush();
             }
             else
             {
-                //*********************************************************************
-                //spTestFile.WriteLine("Error Code:13");
-                //spTestFile.Flush();
-
                 MainWindow.timer.Stop();//停止计时器
                 //关闭串口
                 try
                 {
-                    //*********************************************************************
-                    //spTestFile.WriteLine("Error Code:14");
-                    //spTestFile.Flush();
-
                     MainWindow.serPort.Close();
                     btnOpenPort.Content = "打开串口";
                     light.Fill = new SolidColorBrush(Color.FromRgb(200, 200, 200));
@@ -308,30 +241,13 @@ namespace TRIBOLOGY
                     SPortParityCombox.IsEnabled = true;
                     SPortStopbitCombox.IsEnabled = true;
 
-                    //*********************************************************************
-                    //spTestFile.WriteLine("Error Code:15");
-                    //spTestFile.Flush();
-
                 }
                 catch (Exception ex)
                 {
-                    //************************************************************
-                    //spTestFile.WriteLine("Error Code:16");
-                    //spTestFile.Flush();
-
                     ModernDialog.ShowMessage(ex.Message, "Message:", MessageBoxButton.OK);
                     return;
                 }
-
-                //*********************************************************************
-                //spTestFile.WriteLine("Error Code:17");
-                //spTestFile.Flush();
-
             }
-            //*********************************************************************
-            //spTestFile.WriteLine("Error Code:18");
-            //spTestFile.Flush();
-            //spTestFile.Close();
         }
 
         //恒定转速单选框
