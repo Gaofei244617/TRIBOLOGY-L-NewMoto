@@ -408,7 +408,7 @@ namespace TRIBOLOGY
             spCurCollection.Clear();//清空转速曲线
         }
 
-        //启动电机按钮
+        //启动电机Button
         private void startMotoBtn_Click(object sender, RoutedEventArgs e)
         {
             // 检查串口是否开启
@@ -475,10 +475,57 @@ namespace TRIBOLOGY
                 ModernDialog.ShowMessage("请确认电机转速！", "Message:", MessageBoxButton.OK);
             }
         }
-        //电机停转按钮
+        //电机停转Button
         private void stopMotoBtn_Click(object sender, RoutedEventArgs e)
         {
             stopMotor(this,new EventArgs());            
+        }
+
+        //启动电机Button(旋转角度)
+        private void startMotoBtn2_Click(object sender, RoutedEventArgs e)
+        {
+            double ang = 0;    // 旋转角度
+            double speed = 0;  // 转速
+
+            // 检查串口是否开启
+            if (MainWindow.serPort.IsOpen == false)
+            {
+                ModernDialog.ShowMessage("串口未打开，请先打开串口！", "Message:", MessageBoxButton.OK);
+                return;
+            }
+
+            // 解析输入的旋转角度和速度
+            try
+            {
+                ang = Convert.ToDouble(angBox.Text);
+                speed = Convert.ToDouble(angSpBox.Text);
+                if (directCombox.SelectedIndex == 1)
+                {
+                    ang = ang * -1;
+                    ModernDialog.ShowMessage("反转被选中", "Message:", MessageBoxButton.OK);
+                }
+            }
+            catch (Exception)
+            {
+                ModernDialog.ShowMessage("数据输入有误，请重新输入！", "Message:", MessageBoxButton.OK);
+                return;
+            }
+            
+            // 参数输入控件失效
+            angBox.IsEnabled = false;
+            angSpBox.IsEnabled = false;
+            directCombox.IsEnabled = false;
+            startMotoBtn2.IsEnabled = false;
+        }
+
+        //停机按钮(旋转角度)
+        private void stopMotoBtn2_Click(object sender, RoutedEventArgs e)
+        {
+            // 参数输入控件失效
+            angBox.IsEnabled = true;
+            angSpBox.IsEnabled = true;
+            directCombox.IsEnabled = true;
+            startMotoBtn2.IsEnabled = true;
         }
     }
 }

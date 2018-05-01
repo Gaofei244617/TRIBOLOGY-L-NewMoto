@@ -6,13 +6,10 @@
              xmlns:d3="http://research.microsoft.com/DynamicDataDisplay/1.0"
              xmlns:mui="http://firstfloorsoftware.com/ModernUI"
              mc:Ignorable="d" 
-             d:DesignHeight="600" d:DesignWidth="900">
-    <ScrollViewer HorizontalScrollBarVisibility="Auto" >
+             d:DesignHeight="600" d:DesignWidth="900" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto">
+    <ScrollViewer HorizontalScrollBarVisibility="Auto" Margin="0,0,26,0" >
         <Grid Style="{StaticResource ContentRoot}" Margin="0">
-            <GroupBox Header="串口设置" Height="116" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="14" BorderBrush="#FF95989B" BorderThickness="2" Foreground="#FF030D4B"/>
-            <GroupBox Header="电机转速设置" Margin="0,156,0,0" BorderBrush="#FF95989B" BorderThickness="2" FontSize="14" Foreground="#FF050E49">
-                <GridSplitter HorizontalAlignment="Left" Margin="386,65,0,57" Width="2"/>
-            </GroupBox>
+            <GroupBox Header="串口设置" Height="116" Margin="0,10,0,0" FontSize="14" BorderBrush="#FF95989B" BorderThickness="2" Foreground="#FF030D4B" VerticalAlignment="Top"/>
             <!--串口号下拉列表-->
             <Ellipse x:Name="light" HorizontalAlignment="Left" Height="24" Margin="21,61,0,0" VerticalAlignment="Top" Width="24" Fill="#FFC8C8C8"/>
             <Label Content="串口号：" HorizontalAlignment="Left" Height="24" Margin="50,60,0,0" VerticalAlignment="Top" Width="54" FontSize="12" FontWeight="Normal" RenderTransformOrigin="0.519,1.708" VerticalContentAlignment="Center"/>
@@ -60,31 +57,58 @@
             <!--<mui:ModernButton Content="确定" EllipseDiameter="30" IconWidth="18" IconHeight="22" Margin="632,54,0,0" RenderTransformOrigin="1.049,0.447" Height="37" VerticalAlignment="Top" HorizontalAlignment="Left" Width="70"
                               IconData="F1 M 23.7501,33.25L 34.8334,44.3333L 52.2499,22.1668L 56.9999,26.9168L 34.8334,53.8333L 19.0001,38L 23.7501,33.25 Z " Click="Button_Click" FontSize="14" FontWeight="Bold"/>-->
 
-            <!--电机转速曲线数据表-->
-            <DataGrid x:Name="dataGrid" Margin="10,200,0,97" ItemsSource="{Binding}" AreRowDetailsFrozen="True" 
-				        AutoGenerateColumns="False" HorizontalAlignment="Left" Width="375" VerticalContentAlignment="Stretch" UseLayoutRounding="False" GridLinesVisibility="Horizontal" >
-                <DataGrid.Columns>
-                    <DataGridTextColumn Binding="{Binding Number}" Header="编号" />
-                    <DataGridTextColumn Binding="{Binding Minute}" Header="分钟" />
-                    <DataGridTextColumn Binding="{Binding Second}" Header="秒" />
-                    <DataGridTextColumn Binding="{Binding StaSpeed}" Header="起始转速" />
-                    <DataGridTextColumn Binding="{Binding EndSpeed}" Header="末端转速" />
-                </DataGrid.Columns>
-            </DataGrid>
-            <!--转速曲线图-->
-            <d3:ChartPlotter x:Name="curvePlot"	Margin="405,230,10,63" FontWeight="Normal" FontSize="12"  ToolTip="转速曲线" Foreground="#FF000080" >
-                <d3:Header Content="平 台 转 速 曲 线" FontSize="16" Foreground="#FE000080" FontFamily="Microsoft YaHei" FontWeight="Bold"/>
-                <d3:VerticalAxisTitle Content="Speed [r/min]" FontFamily="Georgia" FontSize="16" Foreground="Navy" FontWeight="Bold"/>
-                <d3:HorizontalAxisTitle Content="Time(s)" FontFamily="Georgia" FontSize="16" Foreground="Navy" FontWeight="Bold"/>
-            </d3:ChartPlotter>
-            <Button x:Name="setSpeedBtn" Content="确认" HorizontalAlignment="Left" Margin="270,0,0,64" Width="54" FontSize="14" Height="25" VerticalAlignment="Bottom" Click="setSpeedBtn_Click" FontWeight="Bold"/>
-            <TextBox x:Name="spBox" HorizontalAlignment="Left" Margin="112,0,0,18" TextWrapping="Wrap" Text="0" Width="68" FontSize="14" FontWeight="Normal" VerticalContentAlignment="Center" Height="30" VerticalAlignment="Bottom" IsEnabled="False"/>
-            <Button x:Name="stopMotoBtn" Content="停机" Height="29" Margin="0,0,10,19" VerticalAlignment="Bottom" Foreground="#FFF70B00" BorderThickness="2" ToolTip="电机停止转动" Click="stopMotoBtn_Click" HorizontalAlignment="Right" Width="59"/>
-            <CheckBox x:Name="constSpChecBox" Content="恒定转速：" HorizontalAlignment="Left" Margin="24,0,0,22" Width="88" FontSize="14" FontWeight="Bold" Height="20" VerticalAlignment="Bottom" Unchecked="constSpChecBox_Unchecked" Checked="constSpChecBox_Checked" HorizontalContentAlignment="Center"/>
-            <Button x:Name="svCurBtn" Content="曲线另存为" HorizontalAlignment="Left" Margin="24,0,0,63" Width="77" Click="svCurBtn_Click" Height="25" VerticalAlignment="Bottom" FontWeight="Bold"/>
-            <Button x:Name="impCurBtn" Content="导入曲线" HorizontalAlignment="Left" Margin="106,0,0,63" Width="74" Click="impCurBtn_Click" Height="25" VerticalAlignment="Bottom" FontWeight="Bold"/>
-            <Button x:Name="clearBtn" Content="清空曲线" HorizontalAlignment="Left" Margin="185,0,0,63" Width="74" Height="25" VerticalAlignment="Bottom" Click="clearBtn_Click"/>
-            <Button x:Name="startMotoBtn" Content="启动电机" Margin="0,0,74,19" Height="29" VerticalAlignment="Bottom" FontWeight="Bold" Click="startMotoBtn_Click" HorizontalAlignment="Right" Width="65"/>
+            <TabControl Margin="0,160,0,0">
+
+                <TabItem Header="旋转速度" FontSize="14" FontWeight="Bold" Margin="-2,-2,-31,0">
+                    <Grid  Background="#FFFFFFFF">
+                        <!--电机转速曲线数据表-->
+                        <DataGrid x:Name="dataGrid" Margin="0,0,0,100" ItemsSource="{Binding}" AreRowDetailsFrozen="True" 
+				        AutoGenerateColumns="False" HorizontalAlignment="Left" Width="385" VerticalContentAlignment="Stretch" UseLayoutRounding="False" GridLinesVisibility="Horizontal" Grid.ColumnSpan="2" >
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Binding="{Binding Number}" Header="编号" />
+                                <DataGridTextColumn Binding="{Binding Minute}" Header="分钟" />
+                                <DataGridTextColumn Binding="{Binding Second}" Header="秒" />
+                                <DataGridTextColumn Binding="{Binding StaSpeed}" Header="起始转速" />
+                                <DataGridTextColumn Binding="{Binding EndSpeed}" Header="末端转速" />
+                            </DataGrid.Columns>
+                        </DataGrid>
+
+                        <!--转速曲线图-->
+                        <d3:ChartPlotter x:Name="curvePlot"	Margin="399,10,10,60" FontWeight="Normal" FontSize="12"  ToolTip="转速曲线" Foreground="#FF000080" >
+                            <d3:Header Content="平 台 转 速 曲 线" FontSize="16" Foreground="#FE000080" FontFamily="Microsoft YaHei" FontWeight="Bold"/>
+                            <d3:VerticalAxisTitle Content="Speed [r/min]" FontFamily="Georgia" FontSize="16" Foreground="Navy" FontWeight="Bold"/>
+                            <d3:HorizontalAxisTitle Content="Time(s)" FontFamily="Georgia" FontSize="16" Foreground="Navy" FontWeight="Bold"/>
+                        </d3:ChartPlotter>
+
+                        <Button x:Name="setSpeedBtn" Content="确认" HorizontalAlignment="Left" Margin="305,0,0,63" Width="54" FontSize="14" Height="25" VerticalAlignment="Bottom" Click="setSpeedBtn_Click" FontWeight="Bold"/>
+                        <TextBox x:Name="spBox" HorizontalAlignment="Left" Margin="117,0,0,16" TextWrapping="Wrap" Text="0" Width="68" FontSize="14" FontWeight="Normal" VerticalContentAlignment="Center" Height="30" VerticalAlignment="Bottom" IsEnabled="False"/>
+                        <Button x:Name="stopMotoBtn" Content="停机" Height="29" Margin="0,0,10,19" VerticalAlignment="Bottom" Foreground="#FFF70B00" BorderThickness="2" ToolTip="电机停止转动" Click="stopMotoBtn_Click" HorizontalAlignment="Right" Width="59" Grid.Column="1"/>
+                        <CheckBox x:Name="constSpChecBox" Content="恒定转速：" HorizontalAlignment="Left" Margin="24,0,0,22" Width="88" FontSize="14" FontWeight="Bold" Height="20" VerticalAlignment="Bottom" Unchecked="constSpChecBox_Unchecked" Checked="constSpChecBox_Checked" HorizontalContentAlignment="Center" Grid.ColumnSpan="2"/>
+                        <Button x:Name="svCurBtn" Content="曲线另存为" HorizontalAlignment="Left" Margin="24,0,0,63" Width="88" Click="svCurBtn_Click" Height="25" VerticalAlignment="Bottom" FontWeight="Bold" Grid.ColumnSpan="2"/>
+                        <Button x:Name="impCurBtn" Content="导入曲线" HorizontalAlignment="Left" Margin="126,0,0,63" Width="74" Click="impCurBtn_Click" Height="25" VerticalAlignment="Bottom" FontWeight="Bold"/>
+                        <Button x:Name="clearBtn" Content="清空曲线" HorizontalAlignment="Left" Margin="213,0,0,63" Width="74" Height="25" VerticalAlignment="Bottom" Click="clearBtn_Click"/>
+                        <Button x:Name="startMotoBtn" Content="启动电机" Margin="0,0,74,19" Height="29" VerticalAlignment="Bottom" FontWeight="Bold" Click="startMotoBtn_Click" HorizontalAlignment="Right" Width="65" Grid.Column="1"/>
+                    </Grid>
+                </TabItem>
+
+                <TabItem Header="旋转角度" FontSize="14" FontWeight="Bold" Foreground="#FF2813AE" Margin="30,-2,-57,0">
+                    <Grid Background="#FFFFFFFF">
+                        <StackPanel HorizontalAlignment="Left" Height="53" Margin="20,40,0,0" VerticalAlignment="Top" Width="836" Orientation="Horizontal">
+                            <Label Content="角度(°):" Margin="5,10" VerticalAlignment="Center" Width="64"/>
+                            <TextBox x:Name="angBox" TextWrapping="Wrap" Width="100" Margin="5,14,5,15" VerticalAlignment="Center" FontWeight="Normal"/>
+                            <Label Content="转速(r/min):" Margin="10,10,5,10" Width="94" VerticalAlignment="Center"/>
+                            <TextBox x:Name="angSpBox" TextWrapping="Wrap" Width="80" Margin="5,10" VerticalAlignment="Center" FontWeight="Normal"/>
+                            <ComboBox x:Name="directCombox" Width="65" Margin="20,10,5,10" VerticalAlignment="Center" SelectedIndex="0">
+                                <ComboBoxItem Content="正转"/>
+                                <ComboBoxItem Content="反转"/>
+                            </ComboBox>
+                            <Button x:Name="startMotoBtn2" Content="启动电机" Width="89" Margin="20,14,5,13" VerticalAlignment="Center" Height="26" FontWeight="Bold" Click="startMotoBtn2_Click"/>
+                            <Button x:Name="stopMotoBtn2" Content="停 机" Width="75" VerticalAlignment="Center" Margin="20,0,10,0" Height="25" Foreground="#FFE01010" Click="stopMotoBtn2_Click"/>
+                        </StackPanel>
+                    </Grid>
+                </TabItem>
+
+            </TabControl>
 
         </Grid>
     </ScrollViewer>

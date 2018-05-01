@@ -12,24 +12,24 @@ namespace TRIBOLOGY
     {
         const byte motoAddress = 0x02;   //电机驱动器地址        
         CRC dataCheck = new CRC();       //数据校验对象
-        byte[] speedData = { motoAddress, 0x06, 0x08, 0x02, 0, 0, 0, 0 }; //速度指令
+
+        byte[] speedData    = { motoAddress, 0x06, 0x08, 0x02, 0x00, 0x00, 0, 0 };  // 速度指令
+        byte[] speedFwd     = { motoAddress, 0x06, 0x08, 0x00, 0x01, 0x11, 0, 0 };  // 给定速度正方向
+        byte[] speedRev     = { motoAddress, 0x06, 0x08, 0x00, 0x01, 0x21, 0, 0 };  // 给定速度反方向
+        byte[] pulseH       = { motoAddress, 0x06, 0x08, 0x04, 0x00, 0x00, 0, 0 };  // 位置脉冲高位
+        byte[] pulseL       = { motoAddress, 0x06, 0x08, 0x05, 0x00, 0x00, 0, 0 };  // 位置脉冲低位
+        byte[] disEnableLoc = { motoAddress, 0x06, 0x08, 0x00, 0x00, 0x00, 0, 0 };  // 位置模式去掉使能状态
+        byte[] resetLoc     = { motoAddress, 0x06, 0x08, 0x00, 0x04, 0x00, 0, 0 };  // 位置复位
 
         //*******************************************************************************
-        //public static StreamWriter testFile = new StreamWriter("D:\\TestInfo.txt");
-
         public SendData()
         {
-            //testFile.WriteLine("build sendDate.");
-            //testFile.Flush();
         }
         //*******************************************************************************
 
         //速度使能(交流电机)
         public void start(SerialPort sp)
         {
-            //testFile.WriteLine("Start_begin");
-            //testFile.Flush();
-
             byte[] data = { motoAddress,0x06,0x08,0x00,0x01,0x01,0x4B,0xFB};
             dataCheck.crcCheck(data, 6);
             data[6] = dataCheck.LowByte;
@@ -52,16 +52,11 @@ namespace TRIBOLOGY
                 ModernDialog.ShowMessage("串口不存在或未打开，请选择正确串口并打开！#2", "Message:", MessageBoxButton.OK);
             }
 
-            //testFile.WriteLine("Start_end");
-            //testFile.Flush();
         }
 
         //查询电机转速
         public void qurMotoSpeed(SerialPort sp)
         {
-            //testFile.WriteLine("qurMotoSpeed");
-            //testFile.Flush();
-
             byte[] data = {motoAddress, 0x03, 0x08, 0x12, 0x00, 0x01, 0x26, 0x6F};
             dataCheck.crcCheck(data, 6);
             data[6] = dataCheck.LowByte;
@@ -80,9 +75,6 @@ namespace TRIBOLOGY
         //查询电机扭矩%
         public void qurMotoTorque(SerialPort sp)
         {
-            //testFile.WriteLine("qurMotoTorque");
-            //testFile.Flush();
-
             byte[] data = { motoAddress, 0x03, 0x08, 0x14, 0, 0x01, 0xC6, 0x5D };
             dataCheck.crcCheck(data, 6);
             data[6] = dataCheck.LowByte;
@@ -102,9 +94,6 @@ namespace TRIBOLOGY
         //查询温湿度及压力值命令
         public void qurHumTemPre(SerialPort sp)
         {
-            //testFile.WriteLine("qurHumTemPre");
-            //testFile.Flush();
-
             byte[] data = { 0x23, 0x30, 0x31, 0x0D };
             // 如果串口存在且已经打开
             if (SerialPort.GetPortNames().Contains<string>(sp.PortName) && sp.IsOpen)
@@ -120,9 +109,7 @@ namespace TRIBOLOGY
         //设置电机转速
         public void setMotoSpeed(int speed, SerialPort sp)
         {
-            //testFile.WriteLine("setMotoSpeed");
-            //testFile.Flush();
-
+            // 写入寄存器的数值*0.3 = 电机实际转速
             speed = (int)(speed / 0.3);
             speedData[4] = (byte)(speed / 256);
             speedData[5] = (byte)(speed % 256);
@@ -139,6 +126,11 @@ namespace TRIBOLOGY
             {
                 ModernDialog.ShowMessage("串口不存在或未打开，请选择正确串口并打开！#1", "Message:", MessageBoxButton.OK);
             }
+        }
+
+        // 设置电机旋转角度
+        public void setAngle(double ang, double speed)
+        {
         }
     }
 }
