@@ -9,6 +9,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Threading;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -99,7 +100,8 @@ namespace TRIBOLOGY
                     break;
             }
         }
-        //电机停转
+        
+        //电机停转(速度模式)
         void stopMotor(object sender, EventArgs e)
         {
             SendData sendData = new SendData();
@@ -160,7 +162,8 @@ namespace TRIBOLOGY
                 SysParam.PortName = SPortNoCombox.SelectedIndex + 1;
                 SysParam.BaudRate = MainWindow.serPort.BaudRate;
 
-                switch (SPortParityCombox.SelectedIndex)//设置校验位
+                //设置校验位
+                switch (SPortParityCombox.SelectedIndex)
                 {
                     case 0:
                         MainWindow.serPort.Parity = Parity.None;
@@ -180,8 +183,9 @@ namespace TRIBOLOGY
                 }
 
                 SysParam.Parity = MainWindow.serPort.Parity.ToString();
-
-                switch (SPortStopbitCombox.SelectedIndex)//设置停止位
+               
+                //设置停止位
+                switch (SPortStopbitCombox.SelectedIndex)
                 {
                     case 0:
                         MainWindow.serPort.StopBits = StopBits.None;
@@ -212,7 +216,8 @@ namespace TRIBOLOGY
 
                     ModernDialog.ShowMessage(MainWindow.serPort.PortName + " 已打开！", "", MessageBoxButton.OK);
 
-                    MainWindow.timer.Start();
+                    // Commented by Gaofei
+                    // MainWindow.timer.Start();
 
                     //发布系统参数更改事件
                     if (OnSysParaUpdate != null)
@@ -475,10 +480,14 @@ namespace TRIBOLOGY
                 ModernDialog.ShowMessage("请确认电机转速！", "Message:", MessageBoxButton.OK);
             }
         }
-        //电机停转Button
+
+        //电机停转Button(旋转速度)
         private void stopMotoBtn_Click(object sender, RoutedEventArgs e)
         {
-            stopMotor(this,new EventArgs());            
+            MainWindow.timer.Stop(); // 停止计时器
+            stopMotor(this,new EventArgs()); // 速度置0
+            Thread.Sleep(100);
+            MainWindow.sendData.stopMoto(MainWindow.serPort); // 去掉速度使能
         }
 
         //启动电机Button(旋转角度)
@@ -502,7 +511,6 @@ namespace TRIBOLOGY
                 if (directCombox.SelectedIndex == 1)
                 {
                     ang = ang * -1;
-                    ModernDialog.ShowMessage("反转被选中", "Message:", MessageBoxButton.OK);
                 }
             }
             catch (Exception)
@@ -510,6 +518,11 @@ namespace TRIBOLOGY
                 ModernDialog.ShowMessage("数据输入有误，请重新输入！", "Message:", MessageBoxButton.OK);
                 return;
             }
+
+            // 位置使能
+            MainWindow.sendData.startPosition(MainWindow.serPort);
+            // 发送角度命令
+            MainWindow.sendData.setAngle(ang, speed, MainWindow.serPort);
             
             // 参数输入控件失效
             angBox.IsEnabled = false;
@@ -518,9 +531,12 @@ namespace TRIBOLOGY
             startMotoBtn2.IsEnabled = false;
         }
 
-        //停机按钮(旋转角度)
+        //停机Button(旋转角度)
         private void stopMotoBtn2_Click(object sender, RoutedEventArgs e)
         {
+            // 位置复位
+            MainWindow.sendData.resetPosition(MainWindow.serPort);
+
             // 参数输入控件失效
             angBox.IsEnabled = true;
             angSpBox.IsEnabled = true;
