@@ -126,14 +126,6 @@ namespace TRIBOLOGY
                 }
             }
 
-            //FileOperator fOptor = new FileOperator();
-            ////获取文件保存路径
-            //string s = fOptor.getSavePath();
-            //if (s != null)
-            //{
-            //    File.Move(fileName, s);
-            //}
-
             //控件使能
             startMotoBtn.IsEnabled = true;
             startMotoBtn.Content = "启动电机";
@@ -529,7 +521,7 @@ namespace TRIBOLOGY
             angSpBox.IsEnabled = false;
             directCombox.IsEnabled = false;
             startMotoBtn2.IsEnabled = false;
-            SpdTab.IsEnabled = false;
+            //SpdTab.IsEnabled = false;
         }
 
         //停机Button(旋转角度)
@@ -543,8 +535,7 @@ namespace TRIBOLOGY
             angSpBox.IsEnabled = true;
             directCombox.IsEnabled = true;
             startMotoBtn2.IsEnabled = true;
-            SpdTab.IsEnabled = true;
-
+            //SpdTab.IsEnabled = true;
         }
     }
 }
