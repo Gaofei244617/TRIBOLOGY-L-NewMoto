@@ -529,6 +529,7 @@ namespace TRIBOLOGY
             angSpBox.IsEnabled = false;
             directCombox.IsEnabled = false;
             startMotoBtn2.IsEnabled = false;
+            SpdTab.IsEnabled = false;
         }
 
         //停机Button(旋转角度)
@@ -537,11 +538,13 @@ namespace TRIBOLOGY
             // 位置复位
             MainWindow.sendData.resetPosition(MainWindow.serPort);
 
-            // 参数输入控件失效
+            // 参数输入控件使能
             angBox.IsEnabled = true;
             angSpBox.IsEnabled = true;
             directCombox.IsEnabled = true;
             startMotoBtn2.IsEnabled = true;
+            SpdTab.IsEnabled = true;
+
         }
     }
 }

@@ -59,7 +59,7 @@
 
             <TabControl Margin="0,160,0,0">
 
-                <TabItem Header="电机转速" FontSize="14" FontWeight="Bold" Margin="-2,-2,-31,0">
+                <TabItem x:Name="SpdTab" Header="电机转速" FontSize="14" FontWeight="Bold" Margin="-2,-2,-31,0">
                     <Grid  Background="#FFFFFFFF">
                         <!--电机转速曲线数据表-->
                         <DataGrid x:Name="dataGrid" Margin="0,0,0,100" ItemsSource="{Binding}" AreRowDetailsFrozen="True" 
@@ -91,7 +91,7 @@
                     </Grid>
                 </TabItem>
 
-                <TabItem Header="电机转角" FontSize="14" FontWeight="Bold" Foreground="#FF2813AE" Margin="30,-2,-57,0">
+                <TabItem x:Name="AngTab" Header="电机转角" FontSize="14" FontWeight="Bold" Foreground="#FF2813AE" Margin="30,-2,-57,0">
                     <Grid Background="#FFFFFFFF">
                         <StackPanel HorizontalAlignment="Left" Height="53" Margin="20,40,0,0" VerticalAlignment="Top" Width="836" Orientation="Horizontal">
                             <Label Content="角度(°):" Margin="5,10" VerticalAlignment="Center" Width="64"/>
